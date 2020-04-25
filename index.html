@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Harvesting Social Media Data</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section data-background="background.jpg">
+                    <img width="35%" src="UoE.png">
+
+                <p>
+  			    <h3 style = "background-color:rgba(0,0,0,0.7);">Harvesting Social Media Data</h3></p><p>
+                <h3 style = "background-color:rgba(0,0,0,0.7);">Justin Chun-ting Ho</h3><br>
+                </p>
+
+
+  			  </section>
+              <section>
+                  <h2>What is an API?</h2>
+              </section>
+            <section data-background="https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png" data-background-size="50%">
+            </section>
+
+
+            <section data-background="https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png" data-background-size="50%">
+                <h4 style = "background-color:rgba(0,0,0,0.7);">
+                    <p>Documentations:</p>
+                    <ul>
+                        <li><a href="https://developers.facebook.com/docs/graph-api/reference/v6.0/page/feed">Facebook</a></li>
+                        <li><a href="https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets">Twitter</a></li>
+                    </ul>
+                </h4>
+            </section>
+            <section>
+                <h3>Warning!</h3><br>
+                <p>
+                    <ul>
+                        <li>API is NOT designed for research's purposes!</li>
+                        <li>What you can get depends on the platform's mercy!</li>
+                        <li>It is prone to error and bias!</li>
+                    </ul>
+                </p>
+            </section>
+            <section>
+                <h3>Notable Limitations</h3>
+            </section>
+            <section>
+                <h3>Facebook:</h3>
+                <p>
+                    <ul>
+                        <li>Public pages data only (no personal profile)</li>
+                        <li>Maximum of 600 posts per page per year</li>
+                    </ul>
+                </p>
+                (See: <a href="https://journals.sagepub.com/doi/full/10.1177/2053951720905874">Ho, 2020</a>)
+            </section>
+            <section>
+                <h3>Twitter:</h3>
+                <p>
+                    <ul>
+                        <li>Search API: Limited to tweets published in the past 7 days</li>
+                        <li>Streaming API: ~2% of Twittersphere</li>
+                        <li>Paid options available (can be very costly)</li>
+                    </ul>
+                </p>
+                (See: <a href="http://wwwconference.org/proceedings/www2014/companion/p555.pdf">Morstatter et al., 2014</a>)
+            </section>
+            <section data-background="monkeyr.gif">
+                <h2 style = "background-color:rgba(0,0,0,0.7);">Time for Data Collection</h2>
+            </section>
+            <section>
+                          <div>
+                          <h2>Thank You!</h2>
+                        <h4>Twitter: @justin_ct_ho<br>Github: justinchuntingho<br>Email: Justin.Ho@ed.ac.uk</h4>
+            </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+                slideNumber: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
